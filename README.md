@@ -1,6 +1,6 @@
 <p align="center">
   <a >
-    <img src="./logo/logo_4_320px.jpg"
+    <img src="./assets/banner/banner_1.png"
          alt="Screenshot">
   </a>
 </p>
@@ -42,7 +42,7 @@
 <br>
 
 ## Przyszłe Rozszerzenia:
-- [ - ] W trakcie planowania
+- [ - ] TODO
 
 <br>
 <br>
@@ -50,5 +50,21 @@
 
 | Stack                                                    | Nazwa                              |
 | ------------------------------------------------------- | ---------------------------------------- |
-| [<img src="./logo/react_icon.png">](X)                           | React   |
-| [<img src="./logo/typescript_icon.png">](X)                           | TypeScript   |
+| [<img src="./assets/logo/react_icon.png">](X)                           | React   |
+| [<img src="./assets/logo/typescript_icon.png">](X)                           | TypeScript   |
+| [<img src="./assets/logo/nodejs_icon.png">](X)                           | NodeJS   |
+| [<img src="./assets/logo/tailwind_icon.png">](X)                           | Tailwind   |
+| [<img src="./assets/logo/docker_icon.png">](X)                           | Docker   |
+
+
+## Przegląd aplikacji:
+
+```bash
+TODO
+```
+
+## Jak uruchomic aplikacje:
+
+```bash
+TODO
+```
