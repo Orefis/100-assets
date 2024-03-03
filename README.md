@@ -53,14 +53,14 @@
 | ------------------------------------------------------- | ---------------------------------------- |
 | [<img src="./assets/logo/react_icon.png">](X)                           | React   |
 | [<img src="./assets/logo/typescript_icon.png">](X)                           | TypeScript   |
-| [<img src="./assets/logo/nodejs_icon.png">](X)                           | NodeJS PROPABLY  |
+| [<img src="./assets/logo/nodejs_icon.png">](X)                           | NodeJS?  |
 | [<img src="./assets/logo/tailwind_icon.png">](X)                           | Tailwind   |
 
 | Backend                                                    | Nazwa                              |
 | ------------------------------------------------------- | ---------------------------------------- |
 | [<img src="./assets/logo/python_icon.png">](X)                           | Python   |
 | [<img src="./assets/logo/flask_icon.png">](X)                           | Flask   |
-| [<img src="./assets/logo/jwt_icon.png">](X)                           | JSON Web Tonek   |
+| [<img src="./assets/logo/jwt_icon.png">](X)                           | JSON Web Token   |
 
 | Reszta                                                    | Nazwa                              |
 | ------------------------------------------------------- | ---------------------------------------- |
