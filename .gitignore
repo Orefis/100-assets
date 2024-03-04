@@ -1,61 +1,37 @@
 # Zależności
-/node_modules
+/node_modules/
+/venv/
+/env/
 
 # Pliki środowiskowe
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-# Katalogi i pliki budowy
-/build
+# Przykładowe pliki konfiguracyjne
+!env.example
+
+# Katalogi budowy/dist
 /dist
-/*.temp
-/*.tmp
+/build
 
-# Katalogi cache i inne zależności
-.cache/
-pnp.*
-*.pnp.js
+# Katalogi cache
+/.cache
+/.parcel-cache
 
-# Pliki konfiguracyjne narzędzi
-/.idea
+# Pliki kompilacji TypeScript
+*.tsbuildinfo
+
+# Pliki systemowe
 .DS_Store
-/*.iml
-/.vscode
-/.eslintcache
-/.tscache
-/tsconfig.tsbuildinfo
+Thumbs.db
 
-# Pliki i katalogi logów
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-/logs
+# Pliki specyficzne dla edytorów
+.vscode/
+.idea/
 
-# Katalogi generowane przez narzędzia
-/coverage
-/.nyc_output
+# Pliki i katalogi specyficzne dla Pythona
+/__pycache__/
+*.py[cod]
 
-# Pliki edytora
-*.swp
-*.swo
-*.sublime-workspace
-
-# Pliki archiwum
-*.tgz
-
-# Pliki tymczasowe
+# Pliki logów
 *.log
-*.csv
-*.dat
-*.out
-*.pid
-*.seed
-*.pid.lock
-
-# Katalogi i pliki specyficzne dla systemu
-/.pnp
-.pnp.js
-__pypackages__/
