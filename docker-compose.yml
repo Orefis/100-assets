@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./server
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+  backend:
+    build: ./client
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
