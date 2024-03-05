@@ -13,31 +13,30 @@
 
 ## Główne Funkcjonalności na Start:
 
-> [!IMPORTANT]\
-> 1. **Rejestracja i Zarządzanie Aktywami Sprzętowymi:**
-> - [ - ] Możliwość dodawania nowych aktywów do systemu (np. laptopy, drukarki, itp.), wraz z ich szczegółowymi specyfikacjami, takimi jak marka, model, numer seryjny, data zakupu, okres gwarancji.
-> - [ - ] Kategoryzacja sprzętu dla łatwiejszego zarządzania i wyszukiwania.
-> - [ - ] Możliwość aktualizowania informacji o aktywie, takich jak marka, model, numer seryjny, data zakupu, czy okres gwarancji, po jego zarejestrowaniu w systemie.
-> - [ - ] Funkcja umożliwiająca usuwanie aktywów z systemu, np. w przypadku zbycia, likwidacji lub utraty sprzętu.
-> - [ - ] Opcje wyszukiwania i filtrowania aktywów na podstawie różnych kryteriów, np. kategorii, marki, dostępności.
+1. **Rejestracja i Zarządzanie Aktywami Sprzętowymi:**
+- [ - ] Możliwość dodawania nowych aktywów do systemu (np. laptopy, drukarki, itp.), wraz z ich szczegółowymi specyfikacjami, takimi jak marka, model, numer seryjny, data zakupu, okres gwarancji.
+- [ - ] Kategoryzacja sprzętu dla łatwiejszego zarządzania i wyszukiwania.
+- [ - ] Możliwość aktualizowania informacji o aktywie, takich jak marka, model, numer seryjny, data zakupu, czy okres gwarancji, po jego zarejestrowaniu w systemie.
+- [ - ] Funkcja umożliwiająca usuwanie aktywów z systemu, np. w przypadku zbycia, likwidacji lub utraty sprzętu.
+- [ - ] Opcje wyszukiwania i filtrowania aktywów na podstawie różnych kryteriów, np. kategorii, marki, dostępności.
 
-> 2. **Przypisywanie Sprzętu do Użytkowników:**
-> - [ - ] Funkcja umożliwiająca przypisywanie sprzętu do konkretnych użytkowników w organizacji, wraz z datą przypisania.
-> - [ - ] Możliwość szybkiego przeglądania, kto aktualnie posiada dany element sprzętu.
-> - [ - ] Możliwość zmiany użytkownika, do którego przypisany jest sprzęt, np. w przypadku zmiany stanowiska pracy lub zwolnienia pracownika.
-> - [ - ] Procedura zwrotu sprzętu do puli dostępnych aktywów, wraz z możliwością zapisania daty i warunków zwrotu.
-> - [ - ] Rozszerzenie historii przypisań o szczegółowe informacje, takie jak przyczyny zmian przypisań, osoby odpowiedzialne za zmiany.
+2. **Przypisywanie Sprzętu do Użytkowników:**
+- [ - ] Funkcja umożliwiająca przypisywanie sprzętu do konkretnych użytkowników w organizacji, wraz z datą przypisania.
+- [ - ] Możliwość szybkiego przeglądania, kto aktualnie posiada dany element sprzętu.
+- [ - ] Możliwość zmiany użytkownika, do którego przypisany jest sprzęt, np. w przypadku zmiany stanowiska pracy lub zwolnienia pracownika.
+- [ - ] Procedura zwrotu sprzętu do puli dostępnych aktywów, wraz z możliwością zapisania daty i warunków zwrotu.
+- [ - ] Rozszerzenie historii przypisań o szczegółowe informacje, takie jak przyczyny zmian przypisań, osoby odpowiedzialne za zmiany.
 
-> 3. **Historia Sprzętu:**
-> - [ - ] Automatyczne zapisywanie historii każdego elementu sprzętu, w tym daty przypisania do użytkowników, ewentualnych napraw, serwisowania lub wymian.
-> - [ - ] Przejrzyste śledzenie cyklu życia każdego aktywa.
-> - [ - ] Możliwość korygowania wpisów w historii sprzętu, np. w przypadku błędnych danych dotyczących naprawy czy serwisowania.
-> - [ - ] Funkcja pozwalająca na dodawanie do historii sprzętu notatek lub załączników, np. dokumentacji serwisowej, faktur za naprawę.
+3. **Historia Sprzętu:**
+- [ - ] Automatyczne zapisywanie historii każdego elementu sprzętu, w tym daty przypisania do użytkowników, ewentualnych napraw, serwisowania lub wymian.
+- [ - ] Przejrzyste śledzenie cyklu życia każdego aktywa.
+- [ - ] Możliwość korygowania wpisów w historii sprzętu, np. w przypadku błędnych danych dotyczących naprawy czy serwisowania.
+- [ - ] Funkcja pozwalająca na dodawanie do historii sprzętu notatek lub załączników, np. dokumentacji serwisowej, faktur za naprawę.
 
-> 4. **Historia Przypisania dla Użytkowników:**
-> - [ - ] Umożliwienie użytkownikom przeglądania historii sprzętów, które były do nich przypisane, wraz z okresami posiadania.
-> - [ - ] Możliwość szybkiego dostępu do informacji o wszystkich aktywach, które użytkownik miał w użyciu.
-> - [ - ] Możliwość eksportowania historii przypisań sprzętu dla poszczególnych użytkowników, np. do plików PDF lub Excel, dla celów audytowych lub zarządczych.
+4. **Historia Przypisania dla Użytkowników:**
+- [ - ] Umożliwienie użytkownikom przeglądania historii sprzętów, które były do nich przypisane, wraz z okresami posiadania.
+- [ - ] Możliwość szybkiego dostępu do informacji o wszystkich aktywach, które użytkownik miał w użyciu.
+- [ - ] Możliwość eksportowania historii przypisań sprzętu dla poszczególnych użytkowników, np. do plików PDF lub Excel, dla celów audytowych lub zarządczych.
 
 <br> 
 
