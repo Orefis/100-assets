@@ -1,37 +1,150 @@
-# Zależności
-/node_modules/
-/venv/
-/env/
+# Dependencies
+node_modules/
+venv/
+env/
+.venv
 
-# Pliki środowiskowe
+# Environmental files
 .env
 .env.local
-
-# Przykładowe pliki konfiguracyjne
+# Include example configuration files
 !env.example
 
-# Katalogi budowy/dist
+# Build/dist directories
 /dist
 /build
 
-# Katalogi cache
+# Cache directories
 /.cache
 /.parcel-cache
 
-# Pliki kompilacji TypeScript
+# TypeScript compilation files
 *.tsbuildinfo
 
-# Pliki systemowe
+# System files
 .DS_Store
 Thumbs.db
 
-# Pliki specyficzne dla edytorów
+# Editor-specific files
 .vscode/
 .idea/
 
-# Pliki i katalogi specyficzne dla Pythona
-/__pycache__/
+# Byte-compiled / optimized / DLL files
+__pycache__/
 *.py[cod]
+*$py.class
 
-# Pliki logów
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+# It's recommended to version Pipfile.lock according to pypa/pipenv#598.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Log files
 *.log
