@@ -1,14 +1,20 @@
 version: '3.8'
 services:
-  frontend:
+  server: # Make sure the name of this service matches the name of your backend service in docker-compose.yml
     build: ./server
     ports:
-      - "80:80"
-    depends_on:
-      - backend
-  backend:
+      - "5000:5000"
+    volumes:
+      - ./server:/app
+    environment:
+      FLASK_ENV: development
+  client:
     build: ./client
     ports:
-      - "5000:5000"
+      - "3000:3000"
+    volumes:
+      - ./client:/app
+    stdin_open: true # enables interactive mode, e.g., for hot reload tools
+    tty: true # makes the container's console more interactive
     environment:
-      - FLASK_ENV=development
+      NODE_ENV: production

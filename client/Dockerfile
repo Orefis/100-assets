@@ -1,29 +1,26 @@
-# Obraz bazowy z Node.js
+# Specify the base image
 FROM node:16
 
-# Katalog roboczy w kontenerze
+# Set the working directory in the container
 WORKDIR /app
 
-# Kopiowanie plikÓW `package.json` i `package-lock.json` (lub `yarn.lock`)
+# Copy `package.json` and `package-lock.json` files (if available)
 COPY package*.json ./
 
-# Instalacja zależności projektu
+# Install project dependencies
 RUN npm install
 
-# Kopiownie reszty plików źródłowych aplikacji
+# Copy the rest of the application's source files
 COPY . .
 
-# Budowanie aplikację
+# Build the application for production
 RUN npm run build
 
-# Obraz bazowy dla serwera HTTP do serwowania aplikacji
-FROM nginx:stable-alpine
+# Install a HTTP server to serve static resources
+RUN npm install -g serve
 
-# Kopiowanie zbudowanej aplikację do katalogu serwera
-COPY --from=0 /app/build /usr/share/nginx/html
+# Expose port 3000
+EXPOSE 3000
 
-# Ustawienie port, na którym będzie nasłuchiwał kontener
-EXPOSE 80
-
-# Uruchomienie serwera Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Run the HTTP server to serve the built application
+CMD ["serve", "-s", "build", "-l", "3000"]

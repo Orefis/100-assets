@@ -1,23 +1,24 @@
-# Wybór obrazu bazowego z Pythonem
+# Base image: Official Python image as the base image
 FROM python:3.9-slim
 
-# Ustawienie katalogu roboczego w kontenerze
+# Set the working directory in the container
 WORKDIR /app
 
-# Kopiowanie plików z zależnościami
+# Copy the dependencies file to the working directory
 COPY requirements.txt .
 
-# Instalacja zależności
+# Install any dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Kopiowanie reszty plików źródłowych aplikacji
+# Copy the rest of the application code to the working directory
 COPY . .
 
-# Ustawienie zmiennej środowiskowej wskazującą Flaskowi, jak uruchomić aplikację
+# Set the environment variable to tell Flask how to run the application
 ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
 
-# Ustawienie portu, na którym będzie nasłuchiwał kontener
+# Expose the port Flask listens on
 EXPOSE 5000
 
-# Uruchomienie aplikacji Flask
-CMD ["flask", "run", "--host=0.0.0.0"]
+# Command to run the Flask application
+CMD ["flask", "run"]
