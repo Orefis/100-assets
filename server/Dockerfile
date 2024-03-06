@@ -1,29 +1,23 @@
-# Obraz bazowy z Node.js
-FROM node:16
+# Wybór obrazu bazowego z Pythonem
+FROM python:3.9-slim
 
-# Katalog roboczy w kontenerze
+# Ustawienie katalogu roboczego w kontenerze
 WORKDIR /app
 
-# Kopiowanie plikÓW `package.json` i `package-lock.json` (lub `yarn.lock`)
-COPY package*.json ./
+# Kopiowanie plików z zależnościami
+COPY requirements.txt .
 
-# Instalacja zależności projektu
-RUN npm install
+# Instalacja zależności
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Kopiownie reszty plików źródłowych aplikacji
+# Kopiowanie reszty plików źródłowych aplikacji
 COPY . .
 
-# Budowanie aplikację
-RUN npm run build
+# Ustawienie zmiennej środowiskowej wskazującą Flaskowi, jak uruchomić aplikację
+ENV FLASK_APP=app.py
 
-# Obraz bazowy dla serwera HTTP do serwowania aplikacji
-FROM nginx:stable-alpine
+# Ustawienie portu, na którym będzie nasłuchiwał kontener
+EXPOSE 5000
 
-# Kopiowanie zbudowanej aplikację do katalogu serwera
-COPY --from=0 /app/build /usr/share/nginx/html
-
-# Ustawienie port, na którym będzie nasłuchiwał kontener
-EXPOSE 80
-
-# Uruchomienie serwera Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Uruchomienie aplikacji Flask
+CMD ["flask", "run", "--host=0.0.0.0"]
