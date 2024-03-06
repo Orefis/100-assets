@@ -9,18 +9,24 @@
 <a name="top"></a>
 
 
-> [!CAUTION] IMPORTANT!
+> [!CAUTION]
+>
 > Read this in other languages: [Polski](README.pl.md)
 
+> [!TIP]
 >
-> [!TIP] INFORMATION
 > <p align="justify">
 >  This project aims to create a web application for managing hardware assets for companies, facilitating the assignment of equipment (e.g., laptops, printers) to employees and tracking its history. Key features include asset registration, management, and tracking of assignments and usage. The application will also provide a module with operating instructions and technical support, enhancing operational efficiency and support quality for users. </p>
 
-> [!NOTE] 100COMMITOW.PL
+
+
+> [!NOTE]
+>
 > This project is being developed thanks to the [100commitow.pl](https://100commitow.pl) competition. The challenge starts on March 1, 2024, and will last until June 9, 2024.
-> 
+>
 > My goal is not only to maintain regular work on the project but also to develop programming skills, learn new technologies, and refine existing code. I believe that consistency in daily coding will allow me to make significant progress in my project.
+
+
 ## Main Features at Launch:
 
 1. **Registration and Management of Hardware Assets:**
@@ -114,12 +120,15 @@ TODO
 ```
 <br>
 
-> [!IMPORTANT] HOW TO RUN THE APPLICATION:
+> [!IMPORTANT]
+>
+>  HOW TO RUN THE APPLICATION:
 > ```bash
 > TODO
 > ```
 
-> [!WARNING] README
+> [!WARNING]
+>
 > The documentation (README file) is under construction. As the project evolves, the documentation will be progressively updated and expanded.
 
 [Back to Top](#top) ⬆️
