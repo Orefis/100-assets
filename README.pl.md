@@ -7,15 +7,15 @@
 
 # Przedstawienie projektu 
 
-> [!CAUTION] WAŻNE!
+> [!CAUTION]
 > Czytaj to w innych językach: [English](README.md)
 
 >
-> [!TIP] INFORMACJE
+> [!TIP]
 > <p align="justify">
 >  Projekt ma na celu stworzenie aplikacji webowej do zarządzania aktywami sprzętowymi dla firm, które ułatwi przypisywanie sprzętu (np. laptopy, drukarki) do pracowników i monitorowanie jego historii. Kluczowe funkcje obejmują rejestrację aktywów, zarządzanie nimi, oraz śledzenie przypisań i użytkowania. Aplikacja zapewni również moduł z instrukcjami obsługi i wsparciem technicznym, zwiększając efektywność operacyjną i jakość wsparcia dla użytkowników. </p>
 
-> [!NOTE] 100COMMITOW.PL
+> [!NOTE]
 > Ten projekt powstaje dzięki konkursowi [100commitow.pl](https://100commitow.pl). Wyzwanie rozpoczyna się 1 marca 2024 r. i trwać będzie do 9 czerwca 2024 r.
 > 
 > Moim celem jest nie tylko utrzymanie regularnej pracy nad projektem, ale również rozwijanie umiejętności programistycznych, nauka nowych technologii oraz udoskonalanie istniejącego kodu. Wierzę, że konsekwencja w codziennym kodowaniu pozwoli mi na osiągnięcie znaczącego postępu w moim projekcie.
@@ -113,12 +113,13 @@ TODO
 
 <br>
 
-> [!IMPORTANT] JAK URUCHOMIĆ APLIKACJE:
+> [!IMPORTANT] 
+> JAK URUCHOMIĆ APLIKACJE:
 > ```bash
 > TODO
 > ```
 
-> [!WARNING] README
+> [!WARNING]
 > Dokumentacja (plik README) jest w trakcie tworzenia. Wraz z rozwojem projektu, dokumentacja będzie sukcesywnie aktualizowana i rozszerzana.
 
 [Powrót na górę](#top) ⬆️
