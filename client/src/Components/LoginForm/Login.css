@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes dynamicBackground {
+  0% {
+    background-color: #f0f0f0;
+  }
+  50% {
+    background-color: #e7e7e7;
+  }
+  100% {
+    background-color: #f0f0f0;
+  }
+}
+
+.dynamicBg {
+  animation: dynamicBackground 10s infinite;
+}
+
+.quoteHighlight {
+  padding: 20px;
+  border: 1px solid rgb(16 185 129);
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
