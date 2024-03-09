@@ -3,7 +3,7 @@ import googleLogo from "../Assets/logo/google_logo.svg";
 
 function Form() {
   return (
-    <div className="bg-white px-10 py-20 rounded-3xl border-2 border-gray-200">
+    <div className="bg-white px-10 py-20 rounded-3xl border-2 border-emerald-500 bg-opacity-25 bg-blur-xl">
       <h1 className="text-5xl font-semibold">Welcome Back</h1>
       <p className="font-medium text-lg text-gray-500 mt-4">
         Welcome back! Please eneter your details.
@@ -12,7 +12,7 @@ function Form() {
         <div>
           <label className="text-lg font-medium">Email</label>
           <input
-            className="border-2 border-gray-100 rounded-xl p-3 w-full mt-1 bg-transparent"
+            className="border-2 border-gray-100 rounded-xl p-3 w-full mt-1 focus:border-emerald-500 outline-none"
             type="email"
             placeholder="Enter your email"
           />
@@ -20,7 +20,7 @@ function Form() {
         <div>
           <label className="text-lg font-medium">Password</label>
           <input
-            className="border-2 border-gray-100 rounded-xl p-3 w-full"
+            className="border-2 border-gray-100 rounded-xl p-3 w-full focus:border-emerald-500 outline-none"
             type="password"
             placeholder="Enter your password"
           />
