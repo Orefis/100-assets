@@ -1,5 +1,5 @@
 import "./App.css";
-import LoginForm from "./Components/LoginForm/Login"
+import LoginForm from "./Components/LoginForm/Login";
 
 function App() {
   return (
