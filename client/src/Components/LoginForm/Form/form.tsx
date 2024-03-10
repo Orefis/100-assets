@@ -1,15 +1,16 @@
-import * as React from "react";
 import googleLogo from "../../Assets/logo/google_logo.svg";
 import FormHeader from "../../../Ui/FormHeader/FormHeader";
 import FormField from "../../../Ui/FormField/FormField";
+import { MdLock, MdPerson } from "react-icons/md";
 
 function Form() {
   return (
-    <div className="bg-white px-10 py-20 rounded-3xl shadow-xl bg-opacity-90 bg-blur">
-      <FormHeader title="Welcome Back" subtitle="Welcome back! Please enter your details." />
+    // TODO - przeniesienie tej klasy Carda do reuzywalnego componentu.
+    <div className="bg-white px-10 py-20 rounded-3xl shadow-xl bg-opacity-80 backdrop-blur-3xl">
+      <FormHeader title="Login" subtitle="Welcome back! Please enter your details." />
       <div className="mt-8">
-        <FormField label="Email" type="email" placeholder="Enter your email" id="email" />
-        <FormField label="Password" type="password" placeholder="Enter your password" id="password" />
+        <FormField label="Email" type="email" placeholder="Enter your email" id="email" icon={<MdPerson  />} />
+        <FormField label="Password" type="password" placeholder="Enter your password" id="password" icon={<MdLock />} />
         <div className="mt-8 flex justify-between items-center">
           <div>
             <input type="checkbox" id="remember-me" />

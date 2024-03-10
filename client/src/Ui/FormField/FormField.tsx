@@ -1,25 +1,45 @@
-import React from "react";
+import React, { ReactElement, useState } from "react"; // Import React and ReactElement
 
 interface FormHeaderProps {
   label: string;
   type: string;
   placeholder: string;
   id: string;
+  icon?: ReactElement;
 }
 
+function FormField({ label, type, placeholder, id, icon }: FormHeaderProps) {
+  const [isFocused, setIsFocused] = useState(false);
 
-function FormField({ label, type, placeholder, id }: FormHeaderProps) {
-    return (
-      <div className="mb-4">
-        <label htmlFor={id} className="text-lg font-medium text-gray-700">{label}</label>
+  const handleFocus = () => setIsFocused(true);
+  const handleBlur = () => setIsFocused(false);
+
+  const iconClass = `absolute right-5 top-1/2 -translate-y-1/2 ${
+    isFocused ? "text-emerald-300" : "text-gray-300"
+  }`;
+
+  return (
+    <div className="mb-4 relative">
+      <label htmlFor={id} className="text-lg font-medium text-gray-700">
+        {label}
+      </label>
+      <div className="relative">
         <input
           id={id}
           type={type}
           placeholder={placeholder}
-          className="border-2 border-gray-300 rounded-xl p-3 w-full mt-1 focus:border-emerald-300 outline-none"
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          className="border-2 border-gray-300 rounded-xl p-3 pr-11 w-full mt-1 focus:border-emerald-300 outline-none caret-emerald-500"
         />
+        {icon &&
+          React.cloneElement(icon, {
+            className: iconClass,
+            style: { fontSize: "1.25rem" },
+          })}
       </div>
-    );
-  }
+    </div>
+  );
+}
 
-  export default FormField
+export default FormField;
