@@ -1,10 +1,34 @@
-import googleLogo from "../../Assets/logo/google_logo.svg";
+import { useState } from "react";
 import FormHeader from "../../../Ui/FormHeader/FormHeader";
 import FormField from "../../../Ui/FormField/FormField";
-import { MdLock, MdPerson } from "react-icons/md";
 import Card from "../../../Ui/Card/Card";
+import Button from "../../../Ui/Button/Button";
+
+import { MdLock, MdPerson } from "react-icons/md";
+import { FaGoogle } from "react-icons/fa";
 
 function Form() {
+  const [isLoadingSignIn, setIsLoadingSignIn] = useState(false);
+  const [isLoadingSignInWithGoogle, setIsLoadingSignInWithGoogle] = useState(false);
+
+  const handleSignInClick = async () => {
+    setIsLoadingSignIn(true);
+    //TODO: Tutaj wykonaj operację logowania
+    setTimeout(() => {
+      setIsLoadingSignIn(false);
+      alert('Zalogowano!');
+    }, 1000); // Symulacja żądania sieciowego
+  };
+  
+  const handleSignInWithGoogleClick = async () => {
+    setIsLoadingSignInWithGoogle(true);
+    //TODO: Tutaj wykonaj operację logowania przez Google
+    setTimeout(() => {
+      setIsLoadingSignInWithGoogle(false);
+      alert('Zalogowano przez Google!');
+    }, 1000); // Symulacja żądania sieciowego
+  };
+
   return (
     <Card>
       <FormHeader
@@ -40,15 +64,22 @@ function Form() {
             Forgot password?
           </button>
         </div>
-        {/* TODO przenieść buttony jako w pełni edytowalne komponenty do ofolderu UI w celu uzyskania reuzywalnych przycisków */}
         <div className="mt-8 flex flex-col gap-y-4">
-          <button className="py-3 rounded-xl bg-emerald-500 text-white text-lg font-bold active:scale-[.98] hover:scale-[1.01] ease-in-out active:duration-75 transition-all">
+          <Button
+            variant="primary"
+            onClick={handleSignInClick}
+            isLoading={isLoadingSignIn}
+          >
             Sign in
-          </button>
-          <button className="flex border-2 border-gray-300 items-center justify-center gap-2 py-3 rounded-xl text-lg font-medium text-gray-700 hover:bg-gray-100 active:scale-[.98] hover:scale-[1.01] ease-in-out active:duration-75 transition-all">
-            <img className="h-6 w-6" src={googleLogo} alt="Google Logo" />
+          </Button>
+          <Button
+            variant="submit"
+            icon={<FaGoogle />}
+            onClick={handleSignInWithGoogleClick}
+            isLoading={isLoadingSignInWithGoogle}
+          >
             Sign in with Google
-          </button>
+          </Button>
         </div>
         <div className="mt-8 flex justify-center items-center">
           <p className="font-medium text-gray-700">Don't have an account?</p>
