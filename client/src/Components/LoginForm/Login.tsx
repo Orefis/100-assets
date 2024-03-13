@@ -1,6 +1,8 @@
-import Form from "./Form/form";
 import "./Login.css";
 import Card from "../../Ui/Card/Card";
+import Form from "./Form/Form";
+
+import assetsLogo from "../Assets/logo/100-assets-logo.png";
 
 function Login() {
   return (
@@ -9,14 +11,11 @@ function Login() {
         <Form />
       </div>
       <div className="hidden lg:flex h-full w-1/2 items-center justify-center">
-        <div className="p-12 text-center">
-          <div className="mb-96">
-            <Card >
-              {/* //TODOL: pobawic sie jeszce stylami dla logo */}
-              <h2 className="text-7xl slashed-zero font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-lime-500 to-green-600">100 ASSETS</h2>
-            </Card>
+        <div>
+          <div className="w-5/6">
+            <img src={assetsLogo} alt="Logo"/>
           </div>
-          <div>
+          {/* <div>
             <blockquote className=" floating italic font-medium text-lg text-gray-700 quoteHighlight bg-white px-10 py-20 rounded-3xl shadow-xl bg-opacity-80">
               <p>
                 "A single dream is more powerful than a thousand realities."
@@ -25,7 +24,7 @@ function Login() {
                 - J.R.R. Tolkien
               </cite>
             </blockquote>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
