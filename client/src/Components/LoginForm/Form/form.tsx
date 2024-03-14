@@ -75,7 +75,7 @@ function Form() {
               Sign in
             </Button>
             <Button
-              variant="submit"
+              variant="cancel"
               icon={<FaGoogle />}
               onClick={handleSignInWithGoogleClick}
               isLoading={isLoadingSignInWithGoogle}

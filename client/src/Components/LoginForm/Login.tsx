@@ -6,7 +6,7 @@ import assetsLogo from "../Assets/logo/100-assets-logo.png";
 
 function Login() {
   return (
-    <div className="flex w-full h-screen bg-gradient-to-br from-emerald-500 via-lime-300 to-green-500">
+    <div className="flex w-full h-screen bg-gradient-to-br from-emerald-400 via-emerald-300 to-teal-300">
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center ">
         <Form />
       </div>
