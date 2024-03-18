@@ -31,7 +31,7 @@ function LoginForm() {
   };
 
   return (
-    <div className="w-3/5">
+    <div className="w-full h-full">
       <Card>
         <FormHeader
           title="Login"
@@ -56,13 +56,13 @@ function LoginForm() {
             <div>
               <input type="checkbox" id="remember-me" />
               <label
-                className="ml-2 font-medium text-gray-700"
+                className="ml-2 font-medium text-gray-300"
                 htmlFor="remember-me"
               >
                 Remember for 30 days
               </label>
             </div>
-            <button className="font-medium text-emerald-500">
+            <button className="font-medium text-teal-300">
               Forgot password?
             </button>
           </div>
@@ -75,7 +75,7 @@ function LoginForm() {
               Sign in
             </Button>
             <Button
-              variant="submit"
+              variant="warning"
               icon={<FaGoogle />}
               onClick={handleSignInWithGoogleClick}
               isLoading={isLoadingSignInWithGoogle}
@@ -84,8 +84,8 @@ function LoginForm() {
             </Button>
           </div>
           <div className="mt-8 flex justify-center items-center">
-            <p className="font-medium text-gray-700">Don't have an account?</p>
-            <button className="text-emerald-500 text-lg font-medium ml-2">
+            <p className="font-medium text-gray-400">Don't have an account?</p>
+            <button className="text-teal-300 text-lg font-medium ml-2">
               Sign up
             </button>
           </div>

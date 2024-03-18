@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({ children, onClick, variant, icon, isLoa
   let variantClasses = "";
   switch (variant) {
     case "primary":
-      variantClasses = "bg-emerald-500 hover:bg-emerald-700";
+      variantClasses = "bg-teal-400 hover:bg-teal-600";
       break;
     case "cancel":
       variantClasses = "bg-rose-500 hover:bg-rose-700";
@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({ children, onClick, variant, icon, isLoa
       variantClasses = "bg-cyan-500 hover:bg-cyan-700";
       break;
     case "warning":
-      variantClasses = "bg-orange-500 hover:bg-orange-700";
+      variantClasses = "bg-orange-500 hover:bg-orange-600"; 
       break;
     default:
       variantClasses = "bg-gray-500 hover:bg-gray-700"; // Domyślny styl, jeśli wariant nie jest rozpoznany
