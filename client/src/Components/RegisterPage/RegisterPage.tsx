@@ -17,6 +17,7 @@ function RegisterPage() {
         </div>
       </div>
     </div>
+    // TODO: Zrobic tak samo jak i login
   );
 }
 

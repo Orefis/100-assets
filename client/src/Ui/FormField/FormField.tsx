@@ -15,7 +15,7 @@ function FormField({ label, type, placeholder, id, icon }: FormHeaderProps) {
   const handleBlur = () => setIsFocused(false);
 
   const iconClass = `absolute right-5 top-1/2 -translate-y-1/2 ${
-    isFocused ? "text-orange-500" : "text-gray-300"
+    isFocused ? "text-teal-400" : "text-gray-300"
   }`;
 
   return (
@@ -30,7 +30,7 @@ function FormField({ label, type, placeholder, id, icon }: FormHeaderProps) {
           placeholder={placeholder}
           onFocus={handleFocus}
           onBlur={handleBlur}
-          className="border-2 border-gray-300 rounded-xl p-3 pr-11 w-full mt-1 focus:border-orange-400 outline-none caret-orange-600"
+          className="border-2 border-gray-300 rounded-xl p-3 pr-11 w-full mt-1 focus:border-teal-400 outline-none caret-teal-600"
         />
         {icon &&
           React.cloneElement(icon, {
