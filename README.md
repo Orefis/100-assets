@@ -29,6 +29,8 @@
 
 ## Main Features at Launch:
 
+//TODO: ADD ANOTHER FEATURES
+
 1. **Registration and Management of Hardware Assets:**
 - [ - ] Ability to add new assets to the system (e.g., laptops, printers, etc.), along with their detailed specifications such as brand, model, serial number, purchase date, warranty period.
 - [ - ] Categorization of equipment for easier management and search.
