@@ -1,5 +1,4 @@
-import "./App.css";
-import Home from "./Components/HomePage/HomePage";
+import HomePage from "./Components/HomePage/HomePage";
 import LoginPage from "./Components/LoginPage/LoginPage";
 import NoPage from "./Components/NoPage/NoPage";
 import RegisterPage from "./Components/RegisterPage/RegisterPage";
@@ -14,7 +13,7 @@ function App() {
           {/* Twoje linki / nawigacja */}
           <Routes>
             <Route path="/" element={<LoginPage />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<HomePage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
