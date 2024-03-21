@@ -1,8 +1,8 @@
 import "./LoginPage.css";
 import LoginForm from "./LoginForm/LoginForm";
 
-import bgImage from "../Assets/background/bg_2.jpg";
-import assetsLogo from "../Assets/logo/100-assets-logo.png";
+import bgImage from "../../Assets/background/bg_2.jpg";
+import assetsLogo from "../../Assets/logo/100-assets-logo.png";
 
 function LoginPage() {
   return (

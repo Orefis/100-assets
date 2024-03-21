@@ -1,7 +1,7 @@
 import "./RegisterPage.css";
 import RegisterForm from "./RegisterForm/RegisterForm";
 
-import assetsLogo from "../Assets/logo/100-assets-logo.png";
+import assetsLogo from "../../Assets/logo/100-assets-logo.png";
 
 function RegisterPage() {
   return (

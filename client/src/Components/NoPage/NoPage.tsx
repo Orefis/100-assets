@@ -1,4 +1,4 @@
-import bgImage from "../Assets/background/bg_2.jpg";
+import bgImage from "../../Assets/background/bg_2.jpg";
 
 function NoPage() {
   return (
