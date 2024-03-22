@@ -11,7 +11,6 @@ function Home() {
         <div>CONTENT</div>
       </div>
     </div>
-    // TODO: zmienic nazwe z home na homepage
     // TODO: zrobic componenty title i content jak oreuzywalna czesc
   );
 }

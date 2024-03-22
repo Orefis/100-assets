@@ -1,4 +1,6 @@
+import React from 'react';
 import { Link } from "react-router-dom";
+import MenuItems from '../../Data/MenuItems';
 
 function SideMenu() {
   // TODO: zrobić componenty zeby był reuzywalne
@@ -16,7 +18,7 @@ function SideMenu() {
         <span className="ml-2 text-sm font-bold">100 ASSETS</span>
       </a>
       <div className="w-full px-2">
-        <div className="flex flex-col items-center w-full mt-3 border-t border-gray-700">
+        <Link to="/home" className="flex flex-col items-center w-full mt-3 border-t border-gray-700">
           <a
             className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
             href="#"
@@ -58,11 +60,10 @@ function SideMenu() {
             </svg>
             <span className="ml-2 text-sm font-medium">Guides</span>
           </a>
-        </div>
-        <div className="flex flex-col items-center w-full mt-2 border-t border-gray-700">
+        </Link>
+        <Link to="/inventory" className="flex flex-col items-center w-full mt-2 border-t border-gray-700">
           <a
             className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
-            href="#"
           >
             <svg
               className="w-6 h-6 stroke-current"
@@ -80,7 +81,7 @@ function SideMenu() {
             </svg>
             <span className="ml-2 text-sm font-medium">Inventory</span>
           </a>
-        </div>
+        </Link>
       </div>
       <Link
         to="/"
