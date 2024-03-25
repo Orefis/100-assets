@@ -1,17 +1,15 @@
-import Sidebar from "../Sidebar/Siedebar";
+import Sidebar from "../SideMenu/SideMenu";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 function Home() {
   return (
     <div className="flex">
-      <div>
-        <Sidebar />
-      </div>
-      <div>
-        <div>TITLE</div>
-        <div>CONTENT</div>
+      <Sidebar />
+      <div className="">
+        <Outlet />
       </div>
     </div>
-    // TODO: zrobic componenty title i content jak oreuzywalna czesc
   );
 }
 
