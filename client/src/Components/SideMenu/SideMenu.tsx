@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import MenuItems, { MenuItem } from "../../Data/MenuItems";
 import * as Icons from "react-icons/ai";
 import { AiOutlineLogout, AiFillGold } from "react-icons/ai";
+import Logo from "../../Assets/logo/100-assets-logo.png"
 
 function SideMenu() {
   const IconComponent = (iconName: string) => {
@@ -13,8 +14,7 @@ function SideMenu() {
     <div className="flex flex-col items-center w-52 h-screen overflow-hidden text-gray-400 bg-gray-900 rounded-r-lg">
       <div className="flex items-center justify-center w-full h-16 bg-gray-800 border-b-2 border-gray-700 bg-gray-700">
         {/* TODO: przemyśleć sprawe z NAVLINK nt. headera w sidebarze */}
-        <AiFillGold className="w-6 h-6" />
-        <span className="ml-2 text-lg font-medium">100 ASSETS</span>
+        <img src={Logo} className="w-20 h-20 filter brightness- invert" />
       </div>
       <div className="w-full px-3">
         {MenuItems.map((item: MenuItem) => (
