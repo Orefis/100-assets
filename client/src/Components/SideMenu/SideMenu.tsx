@@ -11,9 +11,8 @@ function SideMenu() {
   };
 
   return (
-    <div className="flex flex-col items-center w-52 h-screen overflow-hidden text-gray-400 bg-gray-900 rounded-r-lg">
+    <div className="flex flex-none flex-col items-center w-64 h-screen overflow-hidden text-gray-400 bg-gray-900 rounded-r-lg relative">
       <div className="flex items-center justify-center w-full h-16 bg-gray-800 border-b-2 border-gray-700 bg-gray-700">
-        {/* TODO: przemyśleć sprawe z NAVLINK nt. headera w sidebarze */}
         <img src={Logo} className="w-20 h-20 filter brightness- invert" />
       </div>
       <div className="w-full px-3">
@@ -23,8 +22,8 @@ function SideMenu() {
             key={item.name}
             className={({ isActive }) =>
               isActive
-                ? "flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300 bg-gray-700 text-gray-300"
-                : "flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
+                ? "flex items-center w-full h-12 px-3 mt-1 rounded hover:bg-gray-700 hover:text-gray-300 bg-gray-700 text-gray-300"
+                : "flex items-center w-full h-12 px-3 mt-1 rounded hover:bg-gray-700 hover:text-gray-300"
             }
           >
             <div className="flex items-center w-full h-12">

@@ -4,9 +4,9 @@ import { Outlet } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="flex">
+    <div className="h-screen flex flex-row flex-wrap">
       <Sidebar />
-      <div className="">
+      <div className="bg-gray-100 flex-1">
         <Outlet />
       </div>
     </div>
