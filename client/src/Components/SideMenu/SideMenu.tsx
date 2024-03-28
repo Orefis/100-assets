@@ -1,8 +1,7 @@
 import { NavLink } from "react-router-dom";
 import MenuItems, { MenuItem } from "../../Data/MenuItems";
-import * as Icons from "react-icons/ai";
-import { AiOutlineLogout, AiFillGold } from "react-icons/ai";
-import Logo from "../../Assets/logo/100-assets-logo.png"
+import * as Icons from "react-icons/ri";
+import Logo from "../../Assets/logo/100-assets-logo.png";
 
 function SideMenu() {
   const IconComponent = (iconName: string) => {
@@ -11,39 +10,34 @@ function SideMenu() {
   };
 
   return (
-    <div className="flex flex-none flex-col items-center w-64 h-screen overflow-hidden text-gray-400 bg-gray-900 rounded-r-lg relative">
-      <div className="flex items-center justify-center w-full h-16 bg-gray-800 border-b-2 border-gray-700 bg-gray-700">
-        <img src={Logo} className="w-20 h-20 filter brightness- invert" />
+    <div className="fixed h-full w-64 md:w-64 bg-gray-900 p-4 z-50 sidebar-menu transition-transform">
+      <div className="flex justify-center items-center pb-4 border-b border-b-gray-80">
+        <img src={Logo} alt="logo" className="w-12 h-12 rounded filter invert" />
       </div>
-      <div className="w-full px-3">
-        {MenuItems.map((item: MenuItem) => (
-          <NavLink
-            to={item.path}
-            key={item.name}
-            className={({ isActive }) =>
-              isActive
-                ? "flex items-center w-full h-12 px-3 mt-1 rounded hover:bg-gray-700 hover:text-gray-300 bg-gray-700 text-gray-300"
-                : "flex items-center w-full h-12 px-3 mt-1 rounded hover:bg-gray-700 hover:text-gray-300"
-            }
-          >
-            <div className="flex items-center w-full h-12">
-              <div style={{ fontSize: "18px" }}>{IconComponent(item.icon)}</div>
-              <span className="ml-2 text-sm font-medium">{item.name}</span>
-            </div>
-          </NavLink>
-        ))}
+      <div className="w-full mt-4">
+        <div className="mb-1">
+          <div className="">
+            {MenuItems.map((item: MenuItem) => (
+              <NavLink
+                to={item.path}
+                key={item.name}
+                className={({ isActive }) =>
+                  isActive
+                    ? "flex items-center my-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md bg-gray-800 text-white"
+                    : "flex items-center my-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md text-gray-100"
+                }
+              >
+                <div className="flex items-center w-full h-12">
+                  <div className="mr-3 text-lg">
+                    {IconComponent(item.icon)}
+                  </div>
+                  <span className="text-sm font-medium">{item.name}</span>
+                </div>
+              </NavLink>
+            ))}
+          </div>
+        </div>
       </div>
-      <NavLink
-        to="/logout"
-        className={({ isActive }) =>
-          isActive
-            ? "flex items-center justify-center w-full h-16 mt-auto bg-gray-800 hover:bg-gray-700 hover:text-gray-300 bg-gray-700"
-            : "flex items-center justify-center w-full h-16 mt-auto bg-gray-800 hover:bg-gray-700 hover:text-gray-300"
-        }
-      >
-        <AiOutlineLogout className="w-6 h-6" />
-        <span className="ml-2 text-sm font-medium">Logout</span>
-      </NavLink>
     </div>
   );
 }

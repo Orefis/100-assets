@@ -5,9 +5,10 @@ export interface MenuItem {
 }
 
 const MenuItems: MenuItem[] = [
-  { name: "Dashboard", path: "/dashboard", icon: "AiFillHome" },
-  { name: "Guides", path: "/guides", icon: "AiFillBook" },
-  { name: "Inventory", path: "/inventory", icon: "AiFillDatabase" },
+  { name: "Dashboard", path: "/dashboard", icon: "RiHome3Line" },
+  { name: "Guides", path: "/guides", icon: "RiBook2Line" },
+  { name: "Inventory", path: "/inventory", icon: "RiDatabase2Line" },
+  { name: "Settings", path: "/settings", icon: "RiSettings3Line" },
 ];
 
 export default MenuItems;

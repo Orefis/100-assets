@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="h-screen flex flex-row flex-wrap">
       <Sidebar />
-      <div className="bg-gray-100 flex-1">
+      <div className="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-50 min-h-screen transition-all main">
         <Outlet />
       </div>
     </div>
