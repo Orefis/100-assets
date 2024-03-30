@@ -1,11 +1,8 @@
-import { RiContractLeftLine , RiSearchLine, RiNotification3Line  } from "react-icons/ri";
+import {RiSearchLine, RiNotification3Line  } from "react-icons/ri";
 
 function DashboardContent() {
   return (
     <div className="py-2 px-6 bg-white flex items-center shadow-md shadow-black/5 sticky top-0 left-0 z-30">
-      <button type="button" className="text-lg text-gray-600 sidebar-toggle">
-        <RiContractLeftLine  />
-      </button>
       <ul className="flex items-center text-sm ml-4">
         <li className="mr-2">
           <a href="#" className="text-gray-400 hover:text-gray-600 font-medium">
