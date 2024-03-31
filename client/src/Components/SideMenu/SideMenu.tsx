@@ -38,7 +38,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isCollapsed, toggleSidebar }) => {
             key={item.name}
             className={({ isActive }) =>
               isActive
-                ? "flex items-center justify-center my-2 px-4 text-emerald-400 hover:bg-gray-700 hover:text-emerald-100 rounded-md bg-gray-800 text-white w-full"
+                ? "flex items-center justify-center my-2 px-4 hover:bg-gray-700 hover:text-emerald-100 rounded-md bg-gray-800 text-emerald-400 w-full"
                 : "flex items-center justify-center my-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-emerald-100 rounded-md text-white w-full"
             }
           >

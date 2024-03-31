@@ -9,8 +9,6 @@ function DashboardContent() {
             Dashboard
           </a>
         </li>
-        <li className="text-gray-600 mr-2 font-medium">/</li>
-        <li className="text-gray-600 mr-2 font-medium">Analytics</li>
       </ul>
       <ul className="ml-auto flex items-center">
         <li className="mr-1 dropdown">

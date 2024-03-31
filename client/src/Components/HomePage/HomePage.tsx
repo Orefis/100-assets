@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="h-screen flex flex-row flex-wrap">
       <Sidebar isCollapsed={isCollapsed} toggleSidebar={() => setIsCollapsed(!isCollapsed)} />
-      <div className={`${isCollapsed ? 'ml-12' : 'ml-60'} w-full bg-gray-300 min-h-screen transition-all duration-300 ease-in-out`}>
+      <div className={`${isCollapsed ? 'ml-14' : 'ml-64'} w-full bg-gray-300 min-h-screen transition-all duration-300 ease-in-out`}>
         <Outlet />
       </div>
     </div>
