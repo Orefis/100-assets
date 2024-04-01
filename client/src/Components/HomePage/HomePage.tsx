@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from "../SideMenu/SideMenu"; // Załóżmy, że SideMenu znajduje się w tym samym katalogu
 import { Outlet } from "react-router-dom";
 
-function Home() {
+function HomePage() {
   const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
 
   return (
@@ -15,4 +15,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
