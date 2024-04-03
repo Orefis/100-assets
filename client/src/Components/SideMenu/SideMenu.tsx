@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { NavLink } from "react-router-dom";
 import MenuItems, { MenuItem } from "../../Data/MenuItems"; // Załóżmy, że ścieżki są poprawne
 import * as Icons from "react-icons/ri";
@@ -16,16 +16,28 @@ const SideMenu: React.FC<SideMenuProps> = ({ isCollapsed, toggleSidebar }) => {
   };
 
   return (
-    <div className={`fixed h-full ${isCollapsed ? 'w-16 -translate-x-1 ' : 'w-64 translate-x-0'} bg-gray-900 p-4 z-50 transition-width duration-300 ease-in-out`}>
+    <div
+      className={`fixed h-full ${
+        isCollapsed ? "w-16 -translate-x-1 " : "w-64 translate-x-0"
+      } bg-gray-900 p-4 z-50 transition-width duration-300 ease-in-out`}
+    >
       <div className="flex justify-between items-center pb-2 border-b border-gray-700">
         {isCollapsed ? (
-          <button onClick={toggleSidebar} className="text-gray-400 hover:text-white w-full flex justify-center">
+          <button
+            onClick={toggleSidebar}
+            className="text-gray-400 hover:text-white w-full flex justify-center"
+          >
             <Icons.RiMenuUnfoldLine className="w-6 h-6" />
           </button>
         ) : (
           <>
-            <span className="text-gray-200 text-nowrap transition-all duration-300 ${isCollapsed ? 'opacity-100' : 'opacity-0 left-0'}">100 ASSETS</span>
-            <button onClick={toggleSidebar} className="text-gray-400 hover:text-white ">
+            <span className="text-gray-200 text-nowrap transition-all duration-300 ${isCollapsed ? 'opacity-100' : 'opacity-0 left-0'}">
+              100 ASSETS
+            </span>
+            <button
+              onClick={toggleSidebar}
+              className="text-gray-400 hover:text-white "
+            >
               <Icons.RiMenuFoldLine className="w-6 h-6" />
             </button>
           </>
@@ -42,17 +54,23 @@ const SideMenu: React.FC<SideMenuProps> = ({ isCollapsed, toggleSidebar }) => {
                 : "flex items-center justify-center my-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-emerald-100 rounded-md text-white w-full"
             }
           >
-            <div className={`flex items-center w-full ${isCollapsed ? 'h-9 justify-center' : 'h-9'}`}>
-              <div className={`text-lg ${isCollapsed ? 'mx-auto' : ''}`}>
+            <div
+              className={`flex items-center w-full ${
+                isCollapsed ? "h-9 justify-center" : "h-9"
+              }`}
+            >
+              <div className={`text-lg ${isCollapsed ? "mx-auto" : ""}`}>
                 {IconComponent(item.icon)}
               </div>
-              {!isCollapsed && <span className="text-sm font-medium ml-3">{item.name}</span>}
+              {!isCollapsed && (
+                <span className="text-sm font-medium ml-3">{item.name}</span>
+              )}
             </div>
           </NavLink>
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default SideMenu;
