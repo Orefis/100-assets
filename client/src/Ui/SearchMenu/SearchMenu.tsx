@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { RiSearchLine } from "react-icons/ri";
 
 function SearchMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLLIElement>(null);
 
-  // TODO: w momencie klikniecia na tło powinno zamknac sie okienko
+  //TODO: pozmieniac tylko style kolorystyczne
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
-    <li className="mr-1 dropdown">
+    <li className="mr-1 dropdown" ref={menuRef}>
       <button
         type="button"
         className="dropdown-toggle text-gray-400 w-8 h-8 rounded flex items-center justify-center hover:bg-gray-50 hover:text-gray-600"
@@ -17,7 +34,7 @@ function SearchMenu() {
       </button>
       <div
         className={`${
-          isOpen ? "absolute right-24 top-12" : "hidden "
+          isOpen ? "absolute right-24 top-12" : "hidden"
         } dropdown-menu shadow-md shadow-black/5 z-30 max-w-xs w-full bg-white rounded-md border border-gray-100`}
       >
         <form action="" className="p-4 border-b border-b-gray-100">

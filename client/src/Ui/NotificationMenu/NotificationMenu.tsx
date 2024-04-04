@@ -1,14 +1,30 @@
-import React, { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { RiNotification3Line } from "react-icons/ri";
 
 function NotificationMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("notifications");
+  const menuRef = useRef<HTMLLIElement>(null);
 
-  // TODO: w momencie klikniecia na tło powinno zamknac sie okienko
+  //TODO: pozmieniac tylko style kolorystyczne
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
-    <li className="dropdown">
+    <li className="dropdown" ref={menuRef}>
       <button
         type="button"
         className="dropdown-toggle text-gray-400 w-8 h-8 rounded flex items-center justify-center hover:bg-gray-50 hover:text-gray-600"
@@ -18,7 +34,7 @@ function NotificationMenu() {
       </button>
       <div
         className={`${
-          isOpen ? "absolute right-16 top-12" : "hidden "
+          isOpen ? "absolute right-16 top-12" : "hidden"
         } dropdown-menu shadow-md shadow-black/5 z-30 max-w-xs w-full bg-white rounded-md border border-gray-100`}
       >
         <div className="flex items-center px-4 pt-4 border-b border-b-gray-100 notification-tab">

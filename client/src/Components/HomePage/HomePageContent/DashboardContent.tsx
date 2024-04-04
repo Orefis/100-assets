@@ -1,6 +1,7 @@
 import React from "react";
 import SearchMenu from "../../../Ui/SearchMenu/SearchMenu";
 import NotificationMenu from "../../../Ui/NotificationMenu/NotificationMenu";
+import ProfileMenu from "../../../Ui/ProfileMenu/ProfileMenu";
 
 function DashboardContent() {
   return (
@@ -16,41 +17,7 @@ function DashboardContent() {
       <ul className="ml-auto flex items-center">
         <SearchMenu />
         <NotificationMenu />
-        <li className="dropdown ml-3">
-          <button type="button" className="dropdown-toggle flex items-center">
-            <img
-              src="https://placehold.co/32x32"
-              alt=""
-              className="w-8 h-8 rounded block object-cover align-middle"
-            />
-          </button>
-          <ul className="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-            <li>
-              <a
-                href="#"
-                className="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50"
-              >
-                Profile
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50"
-              >
-                Settings
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50"
-              >
-                Logout
-              </a>
-            </li>
-          </ul>
-        </li>
+        <ProfileMenu/>
       </ul>
     </div>
   );
