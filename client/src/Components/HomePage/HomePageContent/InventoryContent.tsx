@@ -1,8 +1,12 @@
+import HeaderBar from "../../HeaderBar/HeaderBar";
+
 function InventoryContent() {
   return (
     <div>
-      <h2>Inventory</h2>
-      <p>Here is the Inventory content...</p>
+      <div>
+        <HeaderBar>Inventory</HeaderBar>
+      </div>
+      <div className="flex relative">CONTENT</div>
     </div>
   );
 }

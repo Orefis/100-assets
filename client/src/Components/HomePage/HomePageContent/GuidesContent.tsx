@@ -1,8 +1,12 @@
+import HeaderBar from "../../HeaderBar/HeaderBar";
+
 function GuidesContent() {
   return (
     <div>
-      <h2>Guides</h2>
-      <p>Here is the guides content...</p>
+      <div>
+        <HeaderBar>Guides</HeaderBar>
+      </div>
+      <div>CONTENT</div>
     </div>
   );
 }

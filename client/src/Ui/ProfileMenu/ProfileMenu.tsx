@@ -39,7 +39,7 @@ function ProfileMenu() {
       <div
         className={`${
           isOpen ? "absolute right-4 top-12" : "hidden"
-        } dropdown-menu shadow-md shadow-black/5 z-30 max-w-xs w-full bg-white rounded-md border border-gray-100 max-w-[130px]`}
+        } dropdown-menu shadow-md shadow-black/5 z-30 max-w-xs w-full bg-white rounded-md border border-gray-100 max-w-[120px]`}
       >
         <ul className="">
           <li>
